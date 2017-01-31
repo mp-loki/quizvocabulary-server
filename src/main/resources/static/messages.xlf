@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="92eee6be6de0b11c924e3ab27db30257159c0a7c" datatype="html">
+        <source>Home</source>
+        <target/>
+        <note priority="1" from="description">Home</note>
+      </trans-unit>
+      <trans-unit id="60e9ef0c07c843773f327abb83919f63d833ad6b" datatype="html">
+        <source>Email: </source>
+        <target/>
+        <note priority="1" from="description">Email</note>
+      </trans-unit>
+      <trans-unit id="1d70a245d3885d319e79171676eae7d51fdf3e3f" datatype="html">
+        <source>Name: <x id="INTERPOLATION"/></source>
+        <target/>
+        <note priority="1" from="description">Name</note>
+      </trans-unit>
+      <trans-unit id="590d228651ae8fd659a69ca44de20e62c5a6a11c" datatype="html">
+        <source>Native Language: <x id="INTERPOLATION"/></source>
+        <target/>
+        <note priority="1" from="description">Native language</note>
+      </trans-unit>
+      <trans-unit id="b606f9376772f95352c711a76597d268e380aa64" datatype="html">
+        <source>Language Studies: </source>
+        <target/>
+        <note priority="1" from="description">Language Studies</note>
+      </trans-unit>
+      <trans-unit id="8880286341bf38cd99656ecd7a91edcb98abbc75" datatype="html">
+        <source>Create Your Profile</source>
+        <target/>
+        <note priority="1" from="description">User Profile</note>
+      </trans-unit>
+      <trans-unit id="7103dfae596fc7df3e859ddc94a442509e8b233d" datatype="html">
+        <source>Name: </source>
+        <target/>
+        <note priority="1" from="description">Name</note>
+      </trans-unit>
+      <trans-unit id="88b18279a708ceb7f856d54705050ecabe3b62d7" datatype="html">
+        <source>Native language:</source>
+        <target/>
+        <note priority="1" from="description">Native Language</note>
+      </trans-unit>
+      <trans-unit id="f732c304c7433e5a83ffcd862c3dce709a0f4982" datatype="html">
+        <source>Next</source>
+        <target/>
+        <note priority="1" from="description">Next</note>
+      </trans-unit>
+      <trans-unit id="52c9a103b812f258bcddc3d90a6e3f46871d25fe" datatype="html">
+        <source>Save</source>
+        <target/>
+        <note priority="1" from="description">Save</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

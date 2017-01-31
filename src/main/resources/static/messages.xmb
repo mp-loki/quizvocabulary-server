@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE messagebundle [
+<!ELEMENT messagebundle (msg)*>
+<!ATTLIST messagebundle class CDATA #IMPLIED>
+
+<!ELEMENT msg (#PCDATA|ph|source)*>
+<!ATTLIST msg id CDATA #IMPLIED>
+<!ATTLIST msg seq CDATA #IMPLIED>
+<!ATTLIST msg name CDATA #IMPLIED>
+<!ATTLIST msg desc CDATA #IMPLIED>
+<!ATTLIST msg meaning CDATA #IMPLIED>
+<!ATTLIST msg obsolete (obsolete) #IMPLIED>
+<!ATTLIST msg xml:space (default|preserve) "default">
+<!ATTLIST msg is_hidden CDATA #IMPLIED>
+
+<!ELEMENT source (#PCDATA)>
+
+<!ELEMENT ph (#PCDATA|ex)*>
+<!ATTLIST ph name CDATA #REQUIRED>
+
+<!ELEMENT ex (#PCDATA)>
+]>
+<messagebundle>
+  <msg id="2821179408673282599" desc="Home">Home</msg>
+  <msg id="4374589633190318100" desc="Email">Email: </msg>
+  <msg id="276668943615005823" desc="Name">Name: <ph name="INTERPOLATION"><ex>INTERPOLATION</ex></ph></msg>
+  <msg id="915767474005313078" desc="Native language">Native Language: <ph name="INTERPOLATION"><ex>INTERPOLATION</ex></ph></msg>
+  <msg id="3805678575666473647" desc="Language Studies">Language Studies: </msg>
+  <msg id="7583761090458018361" desc="User Profile">Create Your Profile</msg>
+  <msg id="402785015655073812" desc="Name">Name: </msg>
+  <msg id="4193713220849431748" desc="Native Language">Native language:</msg>
+  <msg id="3885497195825665706" desc="Next">Next</msg>
+  <msg id="3768927257183755959" desc="Save">Save</msg>
+</messagebundle>
