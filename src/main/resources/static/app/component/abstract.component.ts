@@ -3,6 +3,7 @@ import { Profile } from '../model/profile';
 import { Language } from '../model/language';
 import { ProfileService } from '../service/profile.service';
 import { LanguageService } from '../service/language.service';
+import { Auth } from '../service/auth.service';
 import { Router } from '@angular/router';
 
 export class AbstractComponent implements OnInit {
@@ -10,6 +11,7 @@ export class AbstractComponent implements OnInit {
   protected router: Router;
   protected profileService: ProfileService;
   protected languageService: LanguageService;
+  protected auth: Auth;
 
   profile: Profile;
   languages: Language[];
@@ -18,6 +20,7 @@ export class AbstractComponent implements OnInit {
     this.router = injector.get(Router);
     this.profileService = injector.get(ProfileService);
     this.languageService = injector.get(LanguageService);
+    this.auth = injector.get(Auth);
   }
 
   getProfile(): void {
@@ -38,7 +41,10 @@ export class AbstractComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.getLanguages();
+    //this.getLanguages();
+	  if (!this.auth.authenticated()) {
+		  this.auth.login();
+	  }
   }
 
   isEmpty(str: string): boolean {

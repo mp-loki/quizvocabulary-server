@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Profile } from './model/profile';
+import { Auth } from './service/auth.service';
 import { ProfileService } from './service/profile.service';
 import { Router } from '@angular/router';
 
@@ -15,9 +16,14 @@ export class AppComponent implements OnInit {
 
   constructor(
     private router: Router,
-    private profileService: ProfileService) { }
+    private profileService: ProfileService,
+    private auth: Auth) { }
 
   ngOnInit(): void {
+	  if (!this.auth.authenticated()) {
+		  this.auth.login();
+	  }
+	  /*
     this.profileService.getProfile().then(profile => {
       this.profile = profile;
       if (typeof profile.nativeLanguage === 'undefined'
@@ -25,5 +31,6 @@ export class AppComponent implements OnInit {
         this.router.navigateByUrl('/profile/create-profile');
       }
     });
+     */
   }
 }

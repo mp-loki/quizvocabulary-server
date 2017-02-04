@@ -38,6 +38,7 @@ const routes: Routes = [
     path: 'study/:language/quiz',
     component: QuizComponent
   },
+  { path: '**', redirectTo: '/home' }
 ];
 
 @NgModule({
